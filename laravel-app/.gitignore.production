@@ -1,0 +1,40 @@
+# Remove debug files and logs
+server.log
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Remove development dependencies
+/vendor/
+node_modules/
+
+# Remove IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Remove OS files
+.DS_Store
+Thumbs.db
+
+# Remove temporary files
+*.tmp
+*.temp
+*.cache
+
+# Remove sensitive test files
+test_catalog.php
+phpunit.xml.bak
+
+# Remove development artifacts
+.phpunit.result.cache
+coverage/
+
+# Remove local configuration
+.env.local
+.env.development
+
+# Remove build artifacts
+/public/hot
+/public/storage
+/storage/*.key
